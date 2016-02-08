@@ -21,4 +21,9 @@ describe('Triangle', function() {
     var testTriangle = new Triangle(2, 3, 20);
     expect(testTriangle.isTriangle()).to.equal(false);
   });
+
+  it("method triangleType return 'not actually a triangle.' if isTriangle equals false", function() {
+    var testTriangle = new Triangle(2, 3, 20);
+    expect(testTriangle.triangleType()).to.equal("not actually a triangle.");
+  });
 });
